@@ -1,0 +1,414 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+    <meta name="description" content="Personal portfolio powered by Supabase">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="noise"></div>
+    <div class="grid-bg"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="#hero" class="brand">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span id="navName">Portfolio</span>
+        </a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+
+            <button class="theme-btn" id="themeBtn" aria-label="Change theme">
+                <span id="themeIcon">☀</span>
+            </button>
+
+            <a href="#" id="resumeNavBtn" class="resume-mini" target="_blank">
+                Resume ↗
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero section" id="hero">
+
+            <div class="hero-left">
+
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    <span id="statusText">AVAILABLE TO BUILD</span>
+                </div>
+
+                <p class="hero-kicker" id="heroKicker">
+                    HELLO, WORLD.
+                </p>
+
+                <h1>
+                    I'm
+                    <span class="gradient-name" id="heroName">Loading...</span>
+                    <span class="blink">_</span>
+                </h1>
+
+                <div class="role-line">
+                    <span class="terminal-symbol">▹</span>
+                    <span id="heroHeadline">AI & Analytics Enthusiast</span>
+                </div>
+
+                <p class="hero-bio" id="heroBio">
+                    Building ideas, solving problems and turning data into useful experiences.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        Explore my work
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#" id="resumeBtn" class="btn secondary-btn" target="_blank">
+                        Resume
+                        <span>↓</span>
+                    </a>
+
+                </div>
+
+                <div class="social-row" id="socialRow"></div>
+
+            </div>
+
+
+            <!-- CREATIVE TECH VISUAL -->
+            <div class="hero-visual">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="tech-card">
+
+                    <div class="tech-card-top">
+                        <span class="traffic red"></span>
+                        <span class="traffic yellow"></span>
+                        <span class="traffic green"></span>
+
+                        <span class="terminal-title">portfolio.exe</span>
+                    </div>
+
+                    <div class="terminal-content">
+
+                        <p>
+                            <span class="terminal-gray">$</span>
+                            whoami
+                        </p>
+
+                        <p class="terminal-output" id="terminalName">
+                            loading...
+                        </p>
+
+                        <p>
+                            <span class="terminal-gray">$</span>
+                            skills --show
+                        </p>
+
+                        <div class="skill-lines">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>AI/ML</span>
+                            <span>Analytics</span>
+                            <span>Web</span>
+                        </div>
+
+                        <p>
+                            <span class="terminal-gray">$</span>
+                            status
+                        </p>
+
+                        <p class="terminal-success">
+                            ● ONLINE / BUILDING
+                        </p>
+
+                        <span class="terminal-cursor">▋</span>
+
+                    </div>
+
+                </div>
+
+                <div class="floating-chip chip-one">
+                    <span>⌘</span> CREATE
+                </div>
+
+                <div class="floating-chip chip-two">
+                    <span>⚡</span> BUILD
+                </div>
+
+                <div class="floating-chip chip-three">
+                    <span>∞</span> LEARN
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MARQUEE -->
+        <div class="marquee-wrap">
+
+            <div class="marquee">
+
+                <span>DATA</span>
+                <b>✦</b>
+
+                <span>CODE</span>
+                <b>✦</b>
+
+                <span>AI</span>
+                <b>✦</b>
+
+                <span>CREATIVE TECH</span>
+                <b>✦</b>
+
+                <span>PROBLEM SOLVING</span>
+                <b>✦</b>
+
+                <span>DATA</span>
+                <b>✦</b>
+
+                <span>CODE</span>
+                <b>✦</b>
+
+                <span>AI</span>
+                <b>✦</b>
+
+            </div>
+
+        </div>
+
+
+        <!-- ABOUT -->
+        <section class="section about-section" id="about">
+
+            <div class="section-label">
+                <span>01</span>
+                <span>ABOUT ME</span>
+            </div>
+
+            <div class="about-grid">
+
+                <div>
+                    <p class="big-statement" id="aboutStatement">
+                        Curious mind. Constant learner. Builder of things that make sense.
+                    </p>
+                </div>
+
+                <div class="about-info">
+
+                    <p id="aboutBio">
+                        Loading information...
+                    </p>
+
+                    <div class="meta-grid" id="metaRow"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section class="section" id="education">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    <span>02</span>
+                    <span>JOURNEY</span>
+                </div>
+
+                <h2>
+                    Education<span class="accent">.</span>
+                </h2>
+
+            </div>
+
+            <div class="education-list" id="educationList">
+
+                <div class="loading-card">
+                    <span>Loading education...</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    <span>03</span>
+                    <span>SELECTED WORK</span>
+                </div>
+
+                <h2>
+                    Things I've built<span class="accent">.</span>
+                </h2>
+
+            </div>
+
+            <div class="projects-grid" id="projectsList">
+
+                <div class="project-loading">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CERTIFICATES -->
+        <section class="section" id="certificates">
+
+            <div class="section-header">
+
+                <div class="section-label">
+                    <span>04</span>
+                    <span>PROOF OF LEARNING</span>
+                </div>
+
+                <h2>
+                    Certifications<span class="accent">.</span>
+                </h2>
+
+            </div>
+
+            <div class="certificates-grid" id="certificatesList">
+
+                <div class="loading-card">
+                    <span>Loading certificates...</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-box">
+
+                <div class="contact-decoration">
+                    <span>LET'S</span>
+                    <span>BUILD</span>
+                </div>
+
+                <div class="contact-content">
+
+                    <div class="section-label">
+                        <span>05</span>
+                        <span>CONTACT</span>
+                    </div>
+
+                    <h2>
+                        Got an idea?
+                        <br>
+                        <span>Let's make it real.</span>
+                    </h2>
+
+                    <p id="contactText">
+                        Always open to interesting projects, collaborations and conversations.
+                    </p>
+
+                    <div class="contact-buttons">
+
+                        <a href="#" id="emailLink" class="btn primary-btn">
+                            Send an email ↗
+                        </a>
+
+                        <a href="#" id="whatsappBtn" class="btn secondary-btn" target="_blank">
+                            WhatsApp ↗
+                        </a>
+
+                    </div>
+
+                    <div class="social-row large" id="socialRowFooter"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-left">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span id="footerName">Portfolio</span>
+        </div>
+
+        <div class="footer-center">
+            <span id="footerMessage">
+                Designed & built with curiosity.
+            </span>
+        </div>
+
+        <div class="footer-right">
+            © <span id="year"></span>
+        </div>
+
+    </footer>
+
+
+    <!-- SUPABASE -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- APP -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
